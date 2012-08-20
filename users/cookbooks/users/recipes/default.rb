@@ -4,7 +4,7 @@ developers = %w{peterd arjans kevinv martijnv rachidm daanb}
 developers.each_with_index do |developer, index|
   user "#{developer}" do
     comment "Developer on the Team"
-    uid (1000 + index)
+    uid (1100 + index)
     gid "users"
     home "/home/#{developer}"
     shell "/bin/bash"
