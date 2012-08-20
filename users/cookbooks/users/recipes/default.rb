@@ -3,6 +3,7 @@ developers = %w{peterd arjans kevinv martijnv rachidm daanb}
 
 developers.each_with_index do |developer, index|
   user "#{developer}" do
+    supports :manage_home => true
     comment "Developer on the Team"
     uid (1100 + index)
     gid "users"
